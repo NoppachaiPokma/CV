@@ -1,0 +1,15 @@
+body{
+  background-color: #daba8a;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+h1{
+  color: #8a5929;
+  text-align: end;
+  font-size: 2rem;
+  
+}
+#name{
+  color: #522e1a;
+  text-align: left;
+  font-size: 1rem;
+}
