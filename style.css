@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+body{
+  background-color: #000000;
+}
+@media only screen and (max-width: 700px) {
+  .first
+  {
+      display: flex;
+      position: relative;
+      align-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size:25px;
+      transition: 2s;
+  }
+  .first p{
+      height: 130px;
+  }
+  a{
+    color: #ffebcd;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 701px) {
+  .first
+  {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      margin-top:100px;
+      font-size:50px;
+      transition: 2s;
+  }
+  .first p{
+      height: 130px;
+  }
+  a{
+    color: #ffebcd;
+    text-decoration: none;
+  }
+}
+@media only screen and (max-height:900px) {
+  .first
+  {
+      margin-top:20px;
+  }
+  .first p{
+      height: 130px;
+  }
+}
+.first p a:hover{
+  position:relative;
+  color: #ecc149;
+  animation-name: p_hover;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+@keyframes p_hover {
+  0%  {color:#fff; left:0px;}
+  50% {color:#bd520b; left:50px;}
+  100% {color: #ecc149; left:0px;} 
+}
+@keyframes move {
+  from {opacity: 1;}
+  to   {opacity: 0; visibility:hidden;}
+}
+@keyframes moveb {
+  from {opacity: 0;}
+  to   {opacity: 1;}
+}
